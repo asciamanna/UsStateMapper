@@ -7,16 +7,16 @@ Takes as inputs:
 
 * State names (including territories and federal districts)
 * USPS two-letter abbreviations
+* Accept ISO 2+2-letter codes from [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) 
 
 Returns:
 
 * Official U.S. State name
 
-## ToDo
+## TODO
 There are several features I will be building out over time
 
 * Ability to convert an input string into the USPS recognized two-letter state abbreviation.
-* Accept ISO 2+2-letter codes from [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) as input. 
 * Accept US Coast Guard two-letter abbreviations as input.
 * Accept Old GPO state abbreviations as input
 * Accept AP stylebook abbreviations as input

@@ -4,8 +4,14 @@
   }
 
   public class StateTextNormalizer : IStateTextNormalizer {
+    private const string IsoTwoPlusTwoCodePrefix = "US-";
+    
     public string Normalize(string stateText) {
-      return stateText.Trim().Replace(" ", string.Empty).Replace(".", string.Empty).ToLower();
+      return TrimIsoTwoPlusTwoCodePrefix(stateText).Trim().Replace(" ", string.Empty).Replace(".", string.Empty).ToLower();
+    }
+
+    private string TrimIsoTwoPlusTwoCodePrefix(string stateText) {
+      return stateText.Replace(IsoTwoPlusTwoCodePrefix, string.Empty);
     }
   }
 }

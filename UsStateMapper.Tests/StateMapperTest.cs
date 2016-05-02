@@ -163,5 +163,14 @@ namespace UsStateMapper.Tests {
 
       Assert.That(result, Is.Empty);
     }
+
+    [Test]
+    public void ToState_Matches_State_When_ISO_2_Plus_2_Letter_Codes_Are_Supplied() {
+      var isoTwoPlusToCode = "US-ME";
+
+      var result = subject.ToState(isoTwoPlusToCode);
+
+      Assert.That(result, Is.EqualTo("Maine"));
+    }
   }
 }
