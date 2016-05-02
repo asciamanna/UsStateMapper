@@ -7,7 +7,9 @@ namespace UsStateMapper {
 
   public class StateNameLookup : IStateNameLookup {
     public string FindState(string normalizedStateText) {
-      return Lookup[normalizedStateText];
+      string state;
+      var found = Lookup.TryGetValue(normalizedStateText, out state);
+      return found ? state : string.Empty;
     }
     private static readonly Dictionary<string, string> Lookup = new Dictionary<string, string> {
       {"al", "Alabama"},

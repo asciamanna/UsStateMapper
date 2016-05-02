@@ -42,7 +42,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateMapper.cs" />
     <Compile Include="StateNameLookup.cs" />
-    <Compile Include="StateNotFoundException.cs" />
     <Compile Include="StateTextNormalizer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

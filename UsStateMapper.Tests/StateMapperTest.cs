@@ -154,5 +154,14 @@ namespace UsStateMapper.Tests {
 
       Assert.That(result, Is.EqualTo(state));
     }
+
+    [Test]
+    public void ToState_Returns_Empty_String_When_No_State_Is_Found() {
+      var unknownStateInput = "Unknown state";
+
+      var result = subject.ToState(unknownStateInput);
+
+      Assert.That(result, Is.Empty);
+    }
   }
 }
