@@ -1,5 +1,5 @@
 # U.S. State Mapper 
-This library maps an input string into U.S. State. It also handles the District of Columbia and recognized U.S. territories.
+This library maps an input string into a U.S. State, recognized U.S. territory, or the District of Columbia.
 
 ## Current Capabilities
 
@@ -7,7 +7,7 @@ Takes as inputs:
 
 * State names (including territories and federal districts)
 * USPS two-letter abbreviations
-* Accept ISO 2+2-letter codes from [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) 
+* ISO 2+2-letter codes from [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) _(e.g., US-PA)_ 
 
 Returns:
 
