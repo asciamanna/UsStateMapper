@@ -1,5 +1,5 @@
 # U.S. State Mapper 
-This library maps an input string into a U.S. State, recognized U.S. territory, or the District of Columbia.
+This library maps an input string into a U.S. State, a U.S. territory, or the District of Columbia.
 
 ## Current Capabilities
 
