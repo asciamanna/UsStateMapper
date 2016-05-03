@@ -8,6 +8,7 @@ Takes as inputs:
 * State names (including territories and federal districts)
 * USPS two-letter abbreviations
 * ISO 2+2-letter codes from [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) _(e.g., US-PA)_ 
+* ANSI two-digit codes _(e.g., 04 for Arizona)_ 
 
 Returns:
 
@@ -28,7 +29,10 @@ There are several features I will be building out over time
 ```
 var stateMapper = new StateMapper();
 var result = stateMapper.ToState("PA"); // result is "Pennsylvania"  
-result = stateMapper.ToState("Newyork"); //result is "New York"  
-result = stateMapper.ToState("  Utah "); // result is "Utah"  
+result = stateMapper.ToState("Newyork"); // result is "New York"  
+result = stateMapper.ToState("  Utah "); // result is "Utah"
+result = stateMapper.ToState("US-ME"); // result is "Maine"
+result = stateMapper.ToState("04"); // result is "Arizona"  
+  
 ```
 

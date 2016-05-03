@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UsStateMapper {
+﻿namespace UsStateMapper {
   public class StateMapper {
     private readonly IStateTextNormalizer textNormalizer;
     private readonly StateNameLookup stateNameLookup;
