@@ -2,7 +2,7 @@
 
 namespace UsStateMapper.Tests {
   [TestFixture]
-  public class StateMapperTest {
+  public class StateMapperEndToEndTests {
     private StateMapper subject;
 
     [SetUp]
