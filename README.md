@@ -1,4 +1,4 @@
-# U.S. State Mapper 
+# U.S. State Mapper  [![Build status](https://ci.appveyor.com/api/projects/status/j2rbdbq7l9g6egl7?svg=true)](https://ci.appveyor.com/project/asciamanna/usstatemapper) 
 This library maps an input string into a U.S. State, a U.S. territory, or the District of Columbia.
 
 ## Current Capabilities
