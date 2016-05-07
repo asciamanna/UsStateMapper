@@ -1,0 +1,562 @@
+﻿[
+  {
+    "Name": "Alabama",
+    "IsoTwoPlusTwoCode": "US-AL",
+    "AnsiTwoDigitCode": "01",
+    "UspsCode": "AL",
+    "UscgCode": "AL",
+    "OldGpoAbbreviation": "Ala.",
+    "ApStyleAbbreviation": "Ala.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Alaska",
+    "IsoTwoPlusTwoCode": "US-AK",
+    "AnsiTwoDigitCode": "02",
+    "UspsCode": "AK",
+    "UscgCode": "AK",
+    "OldGpoAbbreviation": "Alaska",
+    "ApStyleAbbreviation": "Alaska",
+    "OtherAbbreviations": [ "Alas." ]
+  },
+  {
+    "Name": "Arizona",
+    "IsoTwoPlusTwoCode": "US-AZ",
+    "AnsiTwoDigitCode": "04",
+    "UspsCode": "AZ",
+    "UscgCode": "AZ",
+    "OldGpoAbbreviation": "Ariz.",
+    "ApStyleAbbreviation": "Ariz.",
+    "OtherAbbreviations": [ "Az." ]
+  },
+  {
+    "Name": "Arkansas",
+    "IsoTwoPlusTwoCode": "US-AR",
+    "AnsiTwoDigitCode": "05",
+    "UspsCode": "AR",
+    "UscgCode": "AR",
+    "OldGpoAbbreviation": "Ark.",
+    "ApStyleAbbreviation": "Ark.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "California",
+    "IsoTwoPlusTwoCode": "US-CA",
+    "AnsiTwoDigitCode": "06",
+    "UspsCode": "CA",
+    "UscgCode": "CF",
+    "OldGpoAbbreviation": "Calif.",
+    "ApStyleAbbreviation": "Calif.",
+    "OtherAbbreviations": [ "Ca.", "Cal." ]
+  },
+  {
+    "Name": "Colorado",
+    "IsoTwoPlusTwoCode": "US-CO",
+    "AnsiTwoDigitCode": "08",
+    "UspsCode": "CO",
+    "UscgCode": "CL",
+    "OldGpoAbbreviation": "Colo.",
+    "ApStyleAbbreviation": "Colo.",
+    "OtherAbbreviations": [ "Col." ]
+  },
+  {
+    "Name": "Connecticut",
+    "IsoTwoPlusTwoCode": "US-CT",
+    "AnsiTwoDigitCode": "09",
+    "UspsCode": "CT",
+    "UscgCode": "CT",
+    "OldGpoAbbreviation": "Conn.",
+    "ApStyleAbbreviation": "Conn.",
+    "OtherAbbreviations": [ "Ct." ]
+  },
+  {
+    "Name": "Delaware",
+    "IsoTwoPlusTwoCode": "US-DE",
+    "AnsiTwoDigitCode": "10",
+    "UspsCode": "DE",
+    "UscgCode": "DL",
+    "OldGpoAbbreviation": "Del.",
+    "ApStyleAbbreviation": "Del.",
+    "OtherAbbreviations": [ "De." ]
+  },
+  {
+    "Name": "District Of Columbia",
+    "IsoTwoPlusTwoCode": "US-DC",
+    "AnsiTwoDigitCode": "11",
+    "UspsCode": "DC",
+    "UscgCode": "DC",
+    "OldGpoAbbreviation": "D.C.",
+    "ApStyleAbbreviation": "D.C.",
+    "OtherAbbreviations": [ "Wash. D.C." ]
+  },
+  {
+    "Name": "Florida",
+    "IsoTwoPlusTwoCode": "US-FL",
+    "AnsiTwoDigitCode": "12",
+    "UspsCode": "FL",
+    "UscgCode": "FL",
+    "OldGpoAbbreviation": "Fla.",
+    "ApStyleAbbreviation": "Fla.",
+    "OtherAbbreviations": [ "Fl.", "Flor." ]
+  },
+  {
+    "Name": "Georgia",
+    "IsoTwoPlusTwoCode": "US-FL",
+    "AnsiTwoDigitCode": "13",
+    "UspsCode": "GA",
+    "UscgCode": "GA",
+    "OldGpoAbbreviation": "Ga.",
+    "ApStyleAbbreviation": "Ga.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Hawaii",
+    "IsoTwoPlusTwoCode": "US-HI",
+    "AnsiTwoDigitCode": "15",
+    "UspsCode": "HI",
+    "UscgCode": "HA",
+    "OldGpoAbbreviation": "Hawaii",
+    "ApStyleAbbreviation": "Hawaii",
+    "OtherAbbreviations": [ "H.I." ]
+  },
+  {
+    "Name": "Idaho",
+    "IsoTwoPlusTwoCode": "US-ID",
+    "AnsiTwoDigitCode": "16",
+    "UspsCode": "ID",
+    "UscgCode": "ID",
+    "OldGpoAbbreviation": "Idaho",
+    "ApStyleAbbreviation": "Idaho",
+    "OtherAbbreviations": [ "Id.", "Ida." ]
+  },
+  {
+    "Name": "Illinois",
+    "IsoTwoPlusTwoCode": "US-IL",
+    "AnsiTwoDigitCode": "17",
+    "UspsCode": "IL",
+    "UscgCode": "IL",
+    "OldGpoAbbreviation": "Ill.",
+    "ApStyleAbbreviation": "Ill.",
+    "OtherAbbreviations": [ "Il.", "Ills.", "Ill's" ]
+  },
+  {
+    "Name": "Indiana",
+    "IsoTwoPlusTwoCode": "US-IN",
+    "AnsiTwoDigitCode": "18",
+    "UspsCode": "IN",
+    "UscgCode": "IN",
+    "OldGpoAbbreviation": "Ind.",
+    "ApStyleAbbreviation": "Ind.",
+    "OtherAbbreviations": [ "In." ]
+  },
+  {
+    "Name": "Iowa",
+    "IsoTwoPlusTwoCode": "US-IA",
+    "AnsiTwoDigitCode": "19",
+    "UspsCode": "IA",
+    "UscgCode": "IA",
+    "OldGpoAbbreviation": "Iowa",
+    "ApStyleAbbreviation": "Iowa",
+    "OtherAbbreviations": [ "Ia.", "Ioa." ]
+  },
+  {
+    "Name": "Kansas",
+    "IsoTwoPlusTwoCode": "US-KS",
+    "AnsiTwoDigitCode": "20",
+    "UspsCode": "KS",
+    "UscgCode": "KA",
+    "OldGpoAbbreviation": "Kans.",
+    "ApStyleAbbreviation": "Kan.",
+    "OtherAbbreviations": [ "Ks.", "Ka." ]
+  },
+  {
+    "Name": "Kentucky",
+    "IsoTwoPlusTwoCode": "US-KY",
+    "AnsiTwoDigitCode": "21",
+    "UspsCode": "KY",
+    "UscgCode": "KY",
+    "OldGpoAbbreviation": "Ky.",
+    "ApStyleAbbreviation": "Ky.",
+    "OtherAbbreviations": [ "Ken.", "Kent." ]
+  },
+  {
+    "Name": "Louisiana",
+    "IsoTwoPlusTwoCode": "US-LA",
+    "AnsiTwoDigitCode": "22",
+    "UspsCode": "LA",
+    "UscgCode": "LA",
+    "OldGpoAbbreviation": "La.",
+    "ApStyleAbbreviation": "La.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Maine",
+    "IsoTwoPlusTwoCode": "US-ME",
+    "AnsiTwoDigitCode": "23",
+    "UspsCode": "ME",
+    "UscgCode": "ME",
+    "OldGpoAbbreviation": "Maine",
+    "ApStyleAbbreviation": "Maine",
+    "OtherAbbreviations": [ "Me." ]
+  },
+  {
+    "Name": "Maryland",
+    "IsoTwoPlusTwoCode": "US-MD",
+    "AnsiTwoDigitCode": "24",
+    "UspsCode": "MD",
+    "UscgCode": "MD",
+    "OldGpoAbbreviation": "Md.",
+    "ApStyleAbbreviation": "Md.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Massachusetts",
+    "IsoTwoPlusTwoCode": "US-MA",
+    "AnsiTwoDigitCode": "25",
+    "UspsCode": "MA",
+    "UscgCode": "MS",
+    "OldGpoAbbreviation": "Mass.",
+    "ApStyleAbbreviation": "Mass.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Michigan",
+    "IsoTwoPlusTwoCode": "US-MI",
+    "AnsiTwoDigitCode": "26",
+    "UspsCode": "MI",
+    "UscgCode": "MC",
+    "OldGpoAbbreviation": "Mich.",
+    "ApStyleAbbreviation": "Mich.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Minnesota",
+    "IsoTwoPlusTwoCode": "US-MN",
+    "AnsiTwoDigitCode": "27",
+    "UspsCode": "MN",
+    "UscgCode": "MN",
+    "OldGpoAbbreviation": "Minn.",
+    "ApStyleAbbreviation": "Minn.",
+    "OtherAbbreviations": [ "Mn." ]
+  },
+  {
+    "Name": "Mississippi",
+    "IsoTwoPlusTwoCode": "US-MS",
+    "AnsiTwoDigitCode": "28",
+    "UspsCode": "MS",
+    "UscgCode": "MI",
+    "OldGpoAbbreviation": "Miss.",
+    "ApStyleAbbreviation": "Mis.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Missouri",
+    "IsoTwoPlusTwoCode": "US-MO",
+    "AnsiTwoDigitCode": "29",
+    "UspsCode": "MO",
+    "UscgCode": "MO",
+    "OldGpoAbbreviation": "Mo.",
+    "ApStyleAbbreviation": "Mo.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Montana",
+    "IsoTwoPlusTwoCode": "US-MT",
+    "AnsiTwoDigitCode": "30",
+    "UspsCode": "MT",
+    "UscgCode": "MT",
+    "OldGpoAbbreviation": "Mont.",
+    "ApStyleAbbreviation": "Mont.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Nebraska",
+    "IsoTwoPlusTwoCode": "US-NE",
+    "AnsiTwoDigitCode": "31",
+    "UspsCode": "NE",
+    "UscgCode": "NB",
+    "OldGpoAbbreviation": "Nebr.",
+    "ApStyleAbbreviation": "Neb.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Nevada",
+    "IsoTwoPlusTwoCode": "US-NV",
+    "AnsiTwoDigitCode": "32",
+    "UspsCode": "NV",
+    "UscgCode": "NV",
+    "OldGpoAbbreviation": "Nev.",
+    "ApStyleAbbreviation": "Nev.",
+    "OtherAbbreviations": [ "Nv." ]
+  },
+  {
+    "Name": "New Hampshire",
+    "IsoTwoPlusTwoCode": "US-NH",
+    "AnsiTwoDigitCode": "33",
+    "UspsCode": "NH",
+    "UscgCode": "NH",
+    "OldGpoAbbreviation": "N.H.",
+    "ApStyleAbbreviation": "N.H.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "New Jersey",
+    "IsoTwoPlusTwoCode": "US-NJ",
+    "AnsiTwoDigitCode": "34",
+    "UspsCode": "NJ",
+    "UscgCode": "NJ",
+    "OldGpoAbbreviation": "N.J.",
+    "ApStyleAbbreviation": "N.J.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "New Mexico",
+    "IsoTwoPlusTwoCode": "US-NM",
+    "AnsiTwoDigitCode": "35",
+    "UspsCode": "NM",
+    "UscgCode": "NM",
+    "OldGpoAbbreviation": "N. Mex.",
+    "ApStyleAbbreviation": "N.M.",
+    "OtherAbbreviations": [ "New M." ]
+  },
+  {
+    "Name": "New York",
+    "IsoTwoPlusTwoCode": "US-NY",
+    "AnsiTwoDigitCode": "36",
+    "UspsCode": "NY",
+    "UscgCode": "NY",
+    "OldGpoAbbreviation": "N.Y.",
+    "ApStyleAbbreviation": "N.Y.",
+    "OtherAbbreviations": [ "N. York" ]
+  },
+  {
+    "Name": "North Carolina",
+    "IsoTwoPlusTwoCode": "US-NC",
+    "AnsiTwoDigitCode": "37",
+    "UspsCode": "NC",
+    "UscgCode": "NC",
+    "OldGpoAbbreviation": "N.C.",
+    "ApStyleAbbreviation": "N.C.",
+    "OtherAbbreviations": [ "N. Car." ]
+  },
+  {
+    "Name": "North Dakota",
+    "IsoTwoPlusTwoCode": "US-ND",
+    "AnsiTwoDigitCode": "38",
+    "UspsCode": "ND",
+    "UscgCode": "ND",
+    "OldGpoAbbreviation": "N. Dak.",
+    "ApStyleAbbreviation": "N.D.",
+    "OtherAbbreviations": [ "NoDak" ]
+  },
+  {
+    "Name": "Ohio",
+    "IsoTwoPlusTwoCode": "US-OH",
+    "AnsiTwoDigitCode": "39",
+    "UspsCode": "OH",
+    "UscgCode": "OH",
+    "OldGpoAbbreviation": "Ohio",
+    "ApStyleAbbreviation": "Ohio",
+    "OtherAbbreviations": [ "O.", "Oh." ]
+  },
+  {
+    "Name": "Oklahoma",
+    "IsoTwoPlusTwoCode": "US-OK",
+    "AnsiTwoDigitCode": "40",
+    "UspsCode": "OK",
+    "UscgCode": "OK",
+    "OldGpoAbbreviation": "Okla.",
+    "ApStyleAbbreviation": "Okla.",
+    "OtherAbbreviations": [ "Ok." ]
+  },
+  {
+    "Name": "Oregon",
+    "IsoTwoPlusTwoCode": "US-OR",
+    "AnsiTwoDigitCode": "41",
+    "UspsCode": "OR",
+    "UscgCode": "OR",
+    "OldGpoAbbreviation": "Oreg.",
+    "ApStyleAbbreviation": "Ore.",
+    "OtherAbbreviations": [ "Or." ]
+  },
+  {
+    "Name": "Pennsylvania",
+    "IsoTwoPlusTwoCode": "US-PA",
+    "AnsiTwoDigitCode": "42",
+    "UspsCode": "PA",
+    "UscgCode": "PA",
+    "OldGpoAbbreviation": "Pa.",
+    "ApStyleAbbreviation": "Pa.",
+    "OtherAbbreviations": [ "Penn.", "Penna." ]
+  },
+  {
+    "Name": "Rhode Island",
+    "IsoTwoPlusTwoCode": "US-RI",
+    "AnsiTwoDigitCode": "44",
+    "UspsCode": "RI",
+    "UscgCode": "RI",
+    "OldGpoAbbreviation": "R.I.",
+    "ApStyleAbbreviation": "R.I.",
+    "OtherAbbreviations": [ "R.I. & P.P.", "R. Isl." ]
+  },
+  {
+    "Name": "South Carolina",
+    "IsoTwoPlusTwoCode": "US-SC",
+    "AnsiTwoDigitCode": "45",
+    "UspsCode": "SC",
+    "UscgCode": "SC",
+    "OldGpoAbbreviation": "S.C.",
+    "ApStyleAbbreviation": "S.C.",
+    "OtherAbbreviations": [ "S. Car." ]
+  },
+  {
+    "Name": "South Dakota",
+    "IsoTwoPlusTwoCode": "US-SD",
+    "AnsiTwoDigitCode": "46",
+    "UspsCode": "SD",
+    "UscgCode": "SD",
+    "OldGpoAbbreviation": "S. Dak.",
+    "ApStyleAbbreviation": "S.D.",
+    "OtherAbbreviations": [ "SoDak" ]
+  },
+  {
+    "Name": "Tennessee",
+    "IsoTwoPlusTwoCode": "US-TN",
+    "AnsiTwoDigitCode": "47",
+    "UspsCode": "TN",
+    "UscgCode": "TN",
+    "OldGpoAbbreviation": "Tenn.",
+    "ApStyleAbbreviation": "Tenn.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Texas",
+    "IsoTwoPlusTwoCode": "US-TX",
+    "AnsiTwoDigitCode": "48",
+    "UspsCode": "TX",
+    "UscgCode": "TX",
+    "OldGpoAbbreviation": "Tex.",
+    "ApStyleAbbreviation": "Texas",
+    "OtherAbbreviations": [ "Tx." ]
+  },
+  {
+    "Name": "Utah",
+    "IsoTwoPlusTwoCode": "US-UT",
+    "AnsiTwoDigitCode": "49",
+    "UspsCode": "UT",
+    "UscgCode": "UT",
+    "OldGpoAbbreviation": "Utah",
+    "ApStyleAbbreviation": "Utah",
+    "OtherAbbreviations": [ "Ut." ]
+  },
+  {
+    "Name": "Vermont",
+    "IsoTwoPlusTwoCode": "US-VT",
+    "AnsiTwoDigitCode": "50",
+    "UspsCode": "VT",
+    "UscgCode": "VT",
+    "OldGpoAbbreviation": "Vt.",
+    "ApStyleAbbreviation": "Vt.",
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Virginia",
+    "IsoTwoPlusTwoCode": "US-VA",
+    "AnsiTwoDigitCode": "51",
+    "UspsCode": "VA",
+    "UscgCode": "VA",
+    "OldGpoAbbreviation": "Va.",
+    "ApStyleAbbreviation": "Va.",
+    "OtherAbbreviations": [ "Virg." ]
+  },
+  {
+    "Name": "Washington",
+    "IsoTwoPlusTwoCode": "US-WA",
+    "AnsiTwoDigitCode": "53",
+    "UspsCode": "WA",
+    "UscgCode": "WN",
+    "OldGpoAbbreviation": "Wash.",
+    "ApStyleAbbreviation": "Wash.",
+    "OtherAbbreviations": [ "Wa.", "Wn." ]
+  },
+  {
+    "Name": "West Virginia",
+    "IsoTwoPlusTwoCode": "US-WV",
+    "AnsiTwoDigitCode": "54",
+    "UspsCode": "WV",
+    "UscgCode": "WV",
+    "OldGpoAbbreviation": "W. Va.",
+    "ApStyleAbbreviation": "W.Va.",
+    "OtherAbbreviations": [ "W.V.", "W. Virg." ]
+  },
+  {
+    "Name": "Wisconsin",
+    "IsoTwoPlusTwoCode": "US-WI",
+    "AnsiTwoDigitCode": "55",
+    "UspsCode": "WI",
+    "UscgCode": "WS",
+    "OldGpoAbbreviation": "Wis.",
+    "ApStyleAbbreviation": "Wis.",
+    "OtherAbbreviations": [ "Wi.", "Wisc." ]
+  },
+  {
+    "Name": "Wyoming",
+    "IsoTwoPlusTwoCode": "US-WY",
+    "AnsiTwoDigitCode": "56",
+    "UspsCode": "WY",
+    "UscgCode": "WY",
+    "OldGpoAbbreviation": "Wyo.",
+    "ApStyleAbbreviation": "Wyo.",
+    "OtherAbbreviations": [ "Wy." ]
+  },
+  {
+    "Name": "American Samoa",
+    "IsoTwoPlusTwoCode": "US-AS",
+    "AnsiTwoDigitCode": "60",
+    "UspsCode": "AS",
+    "UscgCode": "AS",
+    "OldGpoAbbreviation": "A.S.",
+    "ApStyleAbbreviation": null,
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Guam",
+    "IsoTwoPlusTwoCode": "US-GU",
+    "AnsiTwoDigitCode": "66",
+    "UspsCode": "GU",
+    "UscgCode": "GU",
+    "OldGpoAbbreviation": "Guam",
+    "ApStyleAbbreviation": null,
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Northern Mariana Islands",
+    "IsoTwoPlusTwoCode": "US-MP",
+    "AnsiTwoDigitCode": "69",
+    "UspsCode": "MP",
+    "UscgCode": "CM",
+    "OldGpoAbbreviation": "M.P.",
+    "ApStyleAbbreviation": null,
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "Puerto Rico",
+    "IsoTwoPlusTwoCode": "US-PR",
+    "AnsiTwoDigitCode": "72",
+    "UspsCode": "PR",
+    "UscgCode": "PR",
+    "OldGpoAbbreviation": "P.R.",
+    "ApStyleAbbreviation": null,
+    "OtherAbbreviations": null
+  },
+  {
+    "Name": "U.S. Virgin Islands",
+    "IsoTwoPlusTwoCode": "US-VI",
+    "AnsiTwoDigitCode": "78",
+    "UspsCode": "VI",
+    "UscgCode": "VI",
+    "OldGpoAbbreviation": "V.I.",
+    "ApStyleAbbreviation": null,
+    "OtherAbbreviations": [ "U.S.V.I." ]
+  }
+]

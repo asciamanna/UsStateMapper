@@ -41,6 +41,9 @@ local.properties
 *.user
 *.sln.docstates
 
+#new Visual Studio .vs folder
+.vs/
+
 # Build results
 
 [Dd]ebug/

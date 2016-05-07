@@ -48,6 +48,7 @@
     <Compile Include="StateMapperEndToEndTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StateMapperTest.cs" />
+    <Compile Include="StateRepositoryTest.cs" />
     <Compile Include="StateTextNormailzerTest.cs" />
   </ItemGroup>
   <ItemGroup>
