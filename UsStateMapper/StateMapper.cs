@@ -1,11 +1,11 @@
 ﻿namespace UsStateMapper {
   public class StateMapper {
     private readonly IStateTextNormalizer textNormalizer;
-    private readonly StateNameLookup stateNameLookup;
+    private readonly IStateNameLookup stateNameLookup;
 
     public StateMapper() : this(new StateTextNormalizer(), new StateNameLookup()) {}
 
-    public StateMapper(IStateTextNormalizer textNormalizer, StateNameLookup stateNameLookup) {
+    public StateMapper(IStateTextNormalizer textNormalizer, IStateNameLookup stateNameLookup) {
       this.textNormalizer = textNormalizer;
       this.stateNameLookup = stateNameLookup;
     }
