@@ -286,5 +286,8 @@ namespace UsStateMapper.Tests {
 
       Assert.That(result, Is.EqualTo(expectedState));
     }
+
+    //TODO Add E2E Tests for USCG Codes
+    //TODO Add E2E Tests for Old GPO Abbreviations
   }
 }
