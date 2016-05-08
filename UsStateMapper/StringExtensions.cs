@@ -1,16 +1,12 @@
 ﻿namespace UsStateMapper {
-  public interface IStateTextNormalizer {
-    string Normalize(string stateText);
-  }
-
-  public class StateTextNormalizer : IStateTextNormalizer {
+  public static class StringExtensions {
     private const string IsoTwoPlusTwoCodePrefix = "US-";
-    
-    public string Normalize(string stateText) {
+
+    public static string NormalizeStateText(this string stateText) {
       return TrimIsoTwoPlusTwoCodePrefix(stateText).Trim().Replace(" ", string.Empty).Replace(".", string.Empty).ToLower();
     }
 
-    private string TrimIsoTwoPlusTwoCodePrefix(string stateText) {
+    private static string TrimIsoTwoPlusTwoCodePrefix(string stateText) {
       return stateText.Replace(IsoTwoPlusTwoCodePrefix, string.Empty);
     }
   }

@@ -49,7 +49,7 @@
     <Compile Include="StateNameLookup.cs" />
     <Compile Include="StateNameDictionaryBuilder.cs" />
     <Compile Include="StateRepository.cs" />
-    <Compile Include="StateTextNormalizer.cs" />
+    <Compile Include="StringExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="states.json">

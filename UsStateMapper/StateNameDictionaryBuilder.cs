@@ -26,6 +26,10 @@ namespace UsStateMapper {
       return stateNameLookup;
     }
 
+    private static Dictionary<string, string> CreateStateNameDictionaryWithStateKeys(List<State> states) {
+      return states.ToDictionary(s => s.Name.NormalizeStateText(), s => s.Name);
+    }
+
     private static void AddAnsiTwoDigitCodeKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.AnsiTwoDigitCode))) {
         stateNameLookup.Add(state.AnsiTwoDigitCode, state.Name);
@@ -34,26 +38,22 @@ namespace UsStateMapper {
 
     private static void AddUspsCodeKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.UspsCode))) {
-        stateNameLookup.Add(state.UspsCode.ToLower(), state.Name);
+        stateNameLookup.Add(state.UspsCode.NormalizeStateText(), state.Name);
       }
     }
 
     private static void AddUscgCodeKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.UscgCode))) {
-        if (!stateNameLookup.ContainsKey(state.UscgCode.ToLower()))
-        stateNameLookup.Add(state.UscgCode.ToLower(), state.Name);
+        if (!stateNameLookup.ContainsKey(state.UscgCode.NormalizeStateText()))
+        stateNameLookup.Add(state.UscgCode.NormalizeStateText(), state.Name);
       }
     }
 
     private static void AddOldGpoAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.OldGpoAbbreviation))) {
-        if (!stateNameLookup.ContainsKey(state.OldGpoAbbreviation.ToLower().Replace(".", string.Empty)))
-          stateNameLookup.Add(state.OldGpoAbbreviation.ToLower().Replace(".", string.Empty), state.Name);
+        if (!stateNameLookup.ContainsKey(state.OldGpoAbbreviation.NormalizeStateText()))
+          stateNameLookup.Add(state.OldGpoAbbreviation.NormalizeStateText(), state.Name);
       }
-    }
-
-    private static Dictionary<string, string> CreateStateNameDictionaryWithStateKeys(List<State> states) {
-      return states.ToDictionary(s => s.Name.ToLower().Replace(" ", string.Empty).Replace(".", string.Empty), s => s.Name);
     }
   }
 }
