@@ -15,6 +15,7 @@ namespace UsStateMapper {
       AddUspsCodeKeys(states, stateNameLookup);
       AddAnsiTwoDigitCodeKeys(states, stateNameLookup);
       AddUscgCodeKeys(states, stateNameLookup);
+      AddOldGpoAbbreviationKeys(states, stateNameLookup);
       return stateNameLookup;
     }
 
@@ -34,6 +35,13 @@ namespace UsStateMapper {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.UscgCode))) {
         if (!stateNameLookup.ContainsKey(state.UscgCode.ToLower()))
         stateNameLookup.Add(state.UscgCode.ToLower(), state.Name);
+      }
+    }
+
+    private static void AddOldGpoAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
+      foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.OldGpoAbbreviation))) {
+        if (!stateNameLookup.ContainsKey(state.OldGpoAbbreviation.ToLower().Replace(".", string.Empty)))
+          stateNameLookup.Add(state.OldGpoAbbreviation.ToLower().Replace(".", string.Empty), state.Name);
       }
     }
 

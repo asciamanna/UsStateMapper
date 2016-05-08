@@ -79,6 +79,30 @@ namespace UsStateMapper.Tests {
       Assert.That(result, Has.Count.EqualTo(2), "There should only be a key present for the state name and USPS code.");
     }
 
+    [Test]
+    public void Create_Adds_OldGpo_Abbreviation_As_Key_To_StateLookup_Removing_Periods() {
+      var states = new List<State> {
+        new State {Name = "Illinois", OldGpoAbbreviation = "Ill." },
+      };
+      repository.Setup(r => r.GetAll()).Returns(states);
+
+      var result = subject.Create();
+
+      AssertKeyThenValue(result, "ill", "Illinois");
+    }
+
+    [Test]
+    public void Create_Does_Not_Add_OldGpo_Abbreviation_As_Key_If_It_Conflicts_With_Another_Key() {
+      var states = new List<State> {
+        new State {Name = "Hawaii", OldGpoAbbreviation = "Hawaii" },
+        new State {Name = "Kentucky", UspsCode = "KY", OldGpoAbbreviation = "Ky."}
+      };
+      repository.Setup(r => r.GetAll()).Returns(states);
+
+      var result = subject.Create();
+      Assert.That(result, Has.Count.EqualTo(3), "The lookup should only contain keys for Hawaii name, Kentucky name, and Kentucky USPS code.");
+    }
+
     private static void AssertKeyThenValue(Dictionary<string, string> lookup, string key, string value) {
       Assert.That(lookup.ContainsKey(key));
       Assert.That(lookup[key], Is.EqualTo(value));
