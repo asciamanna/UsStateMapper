@@ -47,7 +47,7 @@
     <Compile Include="State.cs" />
     <Compile Include="StateMapper.cs" />
     <Compile Include="StateNameLookup.cs" />
-    <Compile Include="StateNameLookupBuilder.cs" />
+    <Compile Include="StateNameDictionaryBuilder.cs" />
     <Compile Include="StateRepository.cs" />
     <Compile Include="StateTextNormalizer.cs" />
   </ItemGroup>

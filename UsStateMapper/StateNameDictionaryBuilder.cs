@@ -1,11 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System.CodeDom;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace UsStateMapper {
-  public class StateNameLookupBuilder {
+  public interface IStateNameDictionaryBuilder {
+    Dictionary<string, string> Create();
+  }
+
+  public class StateNameDictionaryBuilder : IStateNameDictionaryBuilder {
     private readonly IStateRepository stateRepository;
 
-    public StateNameLookupBuilder(IStateRepository stateRepository) {
+    public StateNameDictionaryBuilder() : this(new StateRepository()) {}
+
+    public StateNameDictionaryBuilder(IStateRepository stateRepository) {
       this.stateRepository = stateRepository;
     }
 
@@ -46,7 +53,7 @@ namespace UsStateMapper {
     }
 
     private static Dictionary<string, string> CreateStateNameDictionaryWithStateKeys(List<State> states) {
-      return states.ToDictionary(s => s.Name.ToLower(), s => s.Name);
+      return states.ToDictionary(s => s.Name.ToLower().Replace(" ", string.Empty).Replace(".", string.Empty), s => s.Name);
     }
   }
 }
