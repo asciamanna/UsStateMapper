@@ -24,6 +24,8 @@ namespace UsStateMapper {
 
     private Dictionary<string, string> stateDictionary;
 
-    private Dictionary<string, string> StateDictionary => stateDictionary ?? (stateDictionary = builder.Create());
+    private Dictionary<string, string> StateDictionary {
+      get { return stateDictionary ?? (stateDictionary = builder.Create()); }
+    }
   }
 }
