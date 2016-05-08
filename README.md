@@ -35,4 +35,5 @@ result = stateMapper.ToState("US-ME"); // result is "Maine"
 result = stateMapper.ToState("04"); // result is "Arizona"  
   
 ```
-
+## License
+This software is licensed under the MIT license. It can be found included in this repository [here](./LICENSE).
