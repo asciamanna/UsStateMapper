@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace UsStateMapper {
   public interface IStateNameDictionaryBuilder {
@@ -22,6 +23,7 @@ namespace UsStateMapper {
       AddAnsiTwoDigitCodeKeys(states, stateNameLookup);
       AddUscgCodeKeys(states, stateNameLookup);
       AddOldGpoAbbreviationKeys(states, stateNameLookup);
+      AddApAbbreviationKeys(states, stateNameLookup);
       return stateNameLookup;
     }
 
@@ -52,6 +54,14 @@ namespace UsStateMapper {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.OldGpoAbbreviation))) {
         if (!stateNameLookup.ContainsKey(state.OldGpoAbbreviation.NormalizeStateText()))
           stateNameLookup.Add(state.OldGpoAbbreviation.NormalizeStateText(), state.Name);
+      }
+    }
+
+    private void AddApAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
+      foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.ApStyleAbbreviation))) {
+        if (!stateNameLookup.ContainsKey(state.ApStyleAbbreviation.NormalizeStateText())) {
+          stateNameLookup.Add(state.ApStyleAbbreviation.NormalizeStateText(), state.Name);
+        }
       }
     }
   }

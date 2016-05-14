@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndToEndTests\AnsiTwoDigitCodeInputTest.cs" />
+    <Compile Include="EndToEndTests\ApAbbreviationsInputTest.cs" />
     <Compile Include="EndToEndTests\OldGpoAbbreviationsInputTest.cs" />
     <Compile Include="EndToEndTests\UscgCodeInputTest.cs" />
     <Compile Include="EndToEndTests\IsoTwoPlusTwoCodeInputTest.cs" />

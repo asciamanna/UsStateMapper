@@ -113,6 +113,18 @@ namespace UsStateMapper.Tests {
       Assert.That(result, Has.Count.EqualTo(3), "The dictionary should only contain keys for Hawaii name, Kentucky name, and Kentucky USPS code.");
     }
 
+    [Test]
+    public void Create_Adds_AP_Abbreviation_As_Key_To_StateDictionary() {
+      var states = new List<State> {
+        new State {Name = "Nebraska", ApStyleAbbreviation = "Neb." },
+      };
+      repository.Setup(r => r.GetAll()).Returns(states);
+
+      var result = subject.Create();
+
+      AssertKeyThenValue(result, "neb", "Nebraska");
+    }
+
     private static void AssertKeyThenValue(Dictionary<string, string> result, string key, string value) {
       Assert.That(result.ContainsKey(key));
       Assert.That(result[key], Is.EqualTo(value));
