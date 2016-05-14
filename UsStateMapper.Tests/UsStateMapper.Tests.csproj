@@ -57,7 +57,7 @@
     <Compile Include="StateNameDictionaryBuilderTest.cs" />
     <Compile Include="StateNameLookupTest.cs" />
     <Compile Include="StateRepositoryTest.cs" />
-    <Compile Include="StringExtensionsTest.cs" />
+    <Compile Include="ExtensionsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

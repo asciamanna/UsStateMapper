@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 
 namespace UsStateMapper {
   public interface IStateNameDictionaryBuilder {
@@ -45,8 +44,7 @@ namespace UsStateMapper {
 
     private static void AddUscgCodeKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.UscgCode))) {
-        if (!stateNameLookup.ContainsKey(state.UscgCode.NormalizeStateText()))
-        stateNameLookup.Add(state.UscgCode.NormalizeStateText(), state.Name);
+        stateNameLookup.AddIfKeyDoesntExist(state.UscgCode.NormalizeStateText(), state.Name);
       }
     }
 

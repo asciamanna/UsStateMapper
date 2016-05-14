@@ -16,9 +16,8 @@ namespace UsStateMapper.Tests {
     [Test]
     public void ToState_Changes_Input_Text_To_Lowercase() {
       const string stateText = "FL";
-      const string normalizedText = "fl";
       const string foundState = "Florida";
-      lookup.Setup(l => l.FindState(normalizedText)).Returns(foundState);
+      lookup.Setup(l => l.FindState(stateText.ToLower())).Returns(foundState);
 
       var result = subject.ToState(stateText);
 

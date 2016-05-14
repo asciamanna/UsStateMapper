@@ -2,7 +2,7 @@
 
 namespace UsStateMapper.Tests {
   [TestFixture]
-  public class StringExtensionsTest {
+  public class ExtensionsTest {
     [Test]
     public void NormailzeStateText_Strips_IsoTwoPlusTwo_Prefix() {
       var prefix = "US-";

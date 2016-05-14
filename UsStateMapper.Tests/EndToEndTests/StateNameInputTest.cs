@@ -101,6 +101,5 @@ namespace UsStateMapper.Tests.EndToEndTests {
 
       Assert.That(result, Is.Empty);
     }
-
   }
 } 
