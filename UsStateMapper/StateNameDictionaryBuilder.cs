@@ -52,16 +52,13 @@ namespace UsStateMapper {
 
     private static void AddOldGpoAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.OldGpoAbbreviation))) {
-        if (!stateNameLookup.ContainsKey(state.OldGpoAbbreviation.NormalizeStateText()))
-          stateNameLookup.Add(state.OldGpoAbbreviation.NormalizeStateText(), state.Name);
+        stateNameLookup.AddIfKeyDoesntExist(state.OldGpoAbbreviation.NormalizeStateText(), state.Name);
       }
     }
 
     private void AddApAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.ApStyleAbbreviation))) {
-        if (!stateNameLookup.ContainsKey(state.ApStyleAbbreviation.NormalizeStateText())) {
-          stateNameLookup.Add(state.ApStyleAbbreviation.NormalizeStateText(), state.Name);
-        }
+        stateNameLookup.AddIfKeyDoesntExist(state.ApStyleAbbreviation.NormalizeStateText(), state.Name);
       }
     }
   }
