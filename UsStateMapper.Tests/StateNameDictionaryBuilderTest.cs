@@ -28,7 +28,7 @@ namespace UsStateMapper.Tests {
 
     [Test]
     public void Create_Removes_Periods_And_Spaces_From_State_Name_Key() {
-      var states = new List<State> { new State { Name = "U.S. Virgin Islands" }};
+      var states = new List<State> { new State { Name = "U.S. Virgin Islands" } };
       repository.Setup(r => r.GetAll()).Returns(states);
 
       var result = subject.Create();
@@ -114,7 +114,7 @@ namespace UsStateMapper.Tests {
     }
 
     [Test]
-    public void Create_Adds_AP_Abbreviation_As_Key_To_StateDictionary() {
+    public void Create_Adds_AP_Abbreviation_As_Keys_To_StateDictionary() {
       var states = new List<State> {
         new State {Name = "Nebraska", ApStyleAbbreviation = "Neb." },
       };
@@ -123,6 +123,20 @@ namespace UsStateMapper.Tests {
       var result = subject.Create();
 
       AssertKeyThenValue(result, "neb", "Nebraska");
+    }
+
+    [Test]
+    public void Create_Adds_Other_Abbreviations_As_Keys_To_StateDictionary() {
+      var states = new List<State> { new State {
+          Name = "Illinois",
+          OtherAbbreviations = new List<string> { "Ills.", "Ill's" } }
+      };
+      repository.Setup(r => r.GetAll()).Returns(states);
+
+      var result = subject.Create();
+
+      AssertKeyThenValue(result, "ills", "Illinois");
+      AssertKeyThenValue(result, "ill's", "Illinois");
     }
 
     private static void AssertKeyThenValue(Dictionary<string, string> result, string key, string value) {

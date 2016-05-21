@@ -9,7 +9,7 @@ namespace UsStateMapper {
   public class StateNameDictionaryBuilder : IStateNameDictionaryBuilder {
     private readonly IStateRepository stateRepository;
 
-    public StateNameDictionaryBuilder() : this(new StateRepository()) {}
+    public StateNameDictionaryBuilder() : this(new StateRepository()) { }
 
     public StateNameDictionaryBuilder(IStateRepository stateRepository) {
       this.stateRepository = stateRepository;
@@ -23,6 +23,7 @@ namespace UsStateMapper {
       AddUscgCodeKeys(states, stateNameLookup);
       AddOldGpoAbbreviationKeys(states, stateNameLookup);
       AddApAbbreviationKeys(states, stateNameLookup);
+      AddOtherAbbreviationKeys(states, stateNameLookup);
       return stateNameLookup;
     }
 
@@ -52,6 +53,12 @@ namespace UsStateMapper {
       foreach (var state in states.Where(s => !string.IsNullOrWhiteSpace(s.OldGpoAbbreviation))) {
         stateNameLookup.AddIfKeyDoesntExist(state.OldGpoAbbreviation.NormalizeStateText(), state.Name);
       }
+    }
+
+    private static void AddOtherAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
+      foreach (var state in states.Where(s => s.OtherAbbreviations != null && s.OtherAbbreviations.Any())) {
+        state.OtherAbbreviations.ForEach(o => stateNameLookup.AddIfKeyDoesntExist(o.NormalizeStateText(), state.Name));
+      } 
     }
 
     private void AddApAbbreviationKeys(List<State> states, Dictionary<string, string> stateNameLookup) {
